@@ -64,4 +64,16 @@ Fonctionne seulement Explicit
 		<div class="col w66">2</div>
 	</div>
 ```
+
+## Variables
+Les variables par défaut peuvent être changer au besoin
+
+### Margin 
+$m: 3%;
+
+### Nombre maximal de columns
+$colnb: 8;
+
+### Liste des widths custom
+$widths: w20 20%, w25 25%, w30 30%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 66.66%, w75 75%, w80 80%;
 	
