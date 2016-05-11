@@ -11,12 +11,8 @@
 .w66 {
   width: 66.66%; }
 
-.cols > .col {
-  float: left; }
-.cols:after {
-  content: "";
-  display: block;
-  clear: both; }
+.cols {
+  display: flex; }
 
 .cols.colsm > .col + .col {
   margin-left: 5%; }

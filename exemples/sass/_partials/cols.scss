@@ -17,14 +17,7 @@ $widths: w20 20%, w25 25%, w33 33.33%, w66 66.66%;
 }
 
 .cols {
-  > .col {
-    float: left;
-  }
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
+  display: flex;
 }
 .cols.colsm > .col+.col { margin-left: $m; }
 
