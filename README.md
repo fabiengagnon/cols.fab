@@ -66,7 +66,7 @@ Fonctionne seulement Explicit
 ```
 
 ## Variables
-Les variables par défaut peuvent être changer au besoin
+Les variables par défaut peuvent être changées au besoin
 
 ### Margin 
 $m: 3%;
