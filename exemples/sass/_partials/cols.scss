@@ -1,17 +1,31 @@
 /*
 	
-	cols.fab 0.4.2
+	cols.fab 0.5
 	
 */
 
-/* --- VARS --- */
-//Margin 
-$m: 3%;
-//Max cols number
-$colnb: 8;
-//Widths
-$widths: w20 20%, w25 25%, w30 30%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 66.66%, w75 75%, w80 80%;
 
+/* --- VARS --- */
+
+// Margin left (%)
+$m: 3%;
+
+// Margin bottom (px)
+$mb: 40px;
+
+// Max cols number
+$colnb: 8;
+
+// Var by breakpoint
+$breakpoints: bp1 1024px 3% 40px, bp2 768px 3% 40px, bp3 568px 3% 40px, bp4 480px 3% 40px;
+
+// Widths
+$widths: w20 20%, w25 25%, w30 30%, w32 32.5%, w33 33.33%, w40 40%, w45 40%, w50 50%, w60 60%, w66 66.66%, w70 70%, w75 75%, w80 80%;
+
+
+/* --- CLASSES --- */
+
+// Basic .w## class
 @each $width in $widths {
   $wclass: nth($width, 1);
   $wvalue: nth($width, 2);
@@ -50,14 +64,14 @@ $widths: w20 20%, w25 25%, w30 30%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 6
   .cols-#{$i}.colsm > .col,
 	.colsd.colsm > .col:first-child:nth-last-child(#{$i}),
 	.colsd.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
-	  width: ((100% / $i) - (($m*($i - 1)) / $i));
+	  width: (((100% / $i) - (($m*($i - 1)) / $i)) - 0.1);
 	}
 	//Custom col width
 	@each $width in $widths {
 	  $wclass: nth($width, 1);
 	  $wvalue: nth($width, 2);
 	  .cols-#{$i}.colsm > .col.#{$wclass} {
-	    width: $wvalue - (($m*($i - 1)) / $i);
+	    width: ($wvalue - (($m*($i - 1)) / $i) - 0.1);
 	  }
 	}
 	.cols-#{$i}.colsm > .col:nth-child(#{$i}n+1) {
@@ -68,6 +82,323 @@ $widths: w20 20%, w25 25%, w30 30%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 6
 //Add margin-bottom to .colsm
 @for $i from 1 through $colnb {
 	.cols-#{$i}.colsm > .col {
-	  margin-bottom: $m;
+	  margin-bottom: 40px;
 	}	
+}
+
+@media all and (max-width: 1200px) {
+
+  //Add margin-bottom to .colsm
+  @for $i from 1 through $colnb {
+  	.cols-#{$i}.colsm > .col {
+  	  margin-bottom: 3vw;
+  	}	
+  }
+
+}
+
+@media all and (max-width: 1024px) {
+	
+	$widths: w20 20%, w25 50%, w30 100%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 66.66%, w70 100%, w75 50%, w80 80%;
+	
+	@each $width in $widths {
+	  $wclass: nth($width, 1);
+	  $wvalue: nth($width, 2);
+	  .#{$wclass} {
+	    width: $wvalue;
+	  }
+	}
+	
+	//Cols w/ the same width w/o margin
+	@for $i from 1 through $colnb {
+		
+		$ii: $i;
+		@if $i == 2 {
+			$ii: 2;
+		}
+		@else if $i == 3 {
+			$ii: 3;
+		}
+		@else if $i == 4 {
+			$ii: 4;
+		}
+		@else if $i == 5 {
+			$ii: 5;
+		}
+		@else if $i == 6 {
+			$ii: 6;
+		}
+		@else if $i == 7 {
+			$ii: 7;
+		}
+		@else if $i == 8 {
+			$ii: 8;
+		}
+		
+	  .cols-#{$i} > .col,
+		.colsd > .col:first-child:nth-last-child(#{$i}),
+		.colsd > .col:first-child:nth-last-child(#{$i}) ~ .col {
+		  width: ((100% / $ii));
+		}
+		//Custom col width
+		@each $width in $widths {
+		  $wclass: nth($width, 1);
+		  $wvalue: nth($width, 2);
+		  .cols-#{$i} > .col.#{$wclass} {
+		    width: $wvalue;
+		  }
+		}
+	}
+	
+	//Cols w/ the same width w/ margin
+	@for $i from 1 through $colnb {
+		
+		$ii: $i;
+		@if $i == 2 {
+			$ii: 2;
+		}
+		@else if $i == 3 {
+			$ii: 3;
+		}
+		@else if $i == 4 {
+			$ii: 4;
+		}
+		@else if $i == 5 {
+			$ii: 5;
+		}
+		@else if $i == 6 {
+			$ii: 6;
+		}
+		@else if $i == 7 {
+			$ii: 7;
+		}
+		@else if $i == 8 {
+			$ii: 8;
+		}
+		
+	  .cols-#{$i}.colsm > .col,
+		.colsd.colsm > .col:first-child:nth-last-child(#{$i}),
+		.colsd.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
+		  width: (((100% / $ii) - (($m*($ii - 1)) / $ii)) - 0.1);
+		}
+		//Custom col width
+		@each $width in $widths {
+		  $wclass: nth($width, 1);
+		  $wvalue: nth($width, 2);
+		  .cols-#{$i}.colsm > .col.#{$wclass} {
+		    width: ($wvalue - (($m*($ii - 1)) / $ii) - 0.1);
+		  }
+		}
+		.cols-#{$i}.colsm > .col:nth-child(#{$i}n+1) {
+		  margin-left: $m;
+		}
+		.cols-#{$i}.colsm > .col:nth-child(#{$ii}n+1) {
+		  margin-left: 0;
+		}
+	}
+	
+}
+
+@media all and (max-width: 800px) {
+	
+	$widths: w20 20%, w25 100%, w30 100%, w33 33.33%, w40 40%, w50 100%, w60 60%, w66 66.66%, w70 100%, w75 100%, w80 80%;
+	
+	@each $width in $widths {
+	  $wclass: nth($width, 1);
+	  $wvalue: nth($width, 2);
+	  .#{$wclass} {
+	    width: $wvalue;
+	  }
+	}
+	
+	//Cols w/ the same width w/o margin
+	@for $i from 1 through $colnb {
+		
+		$ii: $i;
+		@if $i == 2 {
+			$ii: 1;
+		}
+		@else if $i == 3 {
+			$ii: 2;
+		}
+		@else if $i == 4 {
+			$ii: 2;
+		}
+		@else if $i == 5 {
+			$ii: 2;
+		}
+		@else if $i == 6 {
+			$ii: 3;
+		}
+		@else if $i == 7 {
+			$ii: 3;
+		}
+		@else if $i == 8 {
+			$ii: 4;
+		}
+		
+	  .cols-#{$i} > .col,
+		.colsd > .col:first-child:nth-last-child(#{$i}),
+		.colsd > .col:first-child:nth-last-child(#{$i}) ~ .col {
+		  width: ((100% / $ii));
+		}
+		//Custom col width
+		@each $width in $widths {
+		  $wclass: nth($width, 1);
+		  $wvalue: nth($width, 2);
+		  .cols-#{$i} > .col.#{$wclass} {
+		    width: $wvalue;
+		  }
+		}
+	}
+	
+	//Cols w/ the same width w/ margin
+	@for $i from 1 through $colnb {
+		
+		$ii: $i;
+		@if $i == 2 {
+			$ii: 1;
+		}
+		@else if $i == 3 {
+			$ii: 2;
+		}
+		@else if $i == 4 {
+			$ii: 2;
+		}
+		@else if $i == 5 {
+			$ii: 2;
+		}
+		@else if $i == 6 {
+			$ii: 3;
+		}
+		@else if $i == 7 {
+			$ii: 3;
+		}
+		@else if $i == 8 {
+			$ii: 4;
+		}
+		
+	  .cols-#{$i}.colsm > .col,
+		.colsd.colsm > .col:first-child:nth-last-child(#{$i}),
+		.colsd.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
+		  width: (((100% / $ii) - (($m*($ii - 1)) / $ii)) - 0.1);
+		}
+		//Custom col width
+		@each $width in $widths {
+		  $wclass: nth($width, 1);
+		  $wvalue: nth($width, 2);
+		  .cols-#{$i}.colsm > .col.#{$wclass} {
+		    width: ($wvalue - (($m*($ii - 1)) / $ii) - 0.1);
+		  }
+		}
+		.cols-#{$i}.colsm > .col:nth-child(#{$i}n+1) {
+		  margin-left: $m;
+		}
+		.cols-#{$i}.colsm > .col:nth-child(#{$ii}n+1) {
+		  margin-left: 0;
+		}
+	}
+	
+}
+
+@media all and (max-width: 568px) {
+	
+	$widths: w20 20%, w25 100%, w30 100%, w33 33.33%, w40 40%, w50 100%, w60 60%, w66 66.66%, w70 100%, w75 100%, w80 80%;
+	
+	@each $width in $widths {
+	  $wclass: nth($width, 1);
+	  $wvalue: nth($width, 2);
+	  .#{$wclass} {
+	    width: $wvalue;
+	  }
+	}
+	
+	//Cols w/ the same width w/o margin
+	@for $i from 1 through $colnb {
+		
+		$ii: $i;
+		@if $i == 2 {
+			$ii: 1;
+		}
+		@else if $i == 3 {
+			$ii: 1;
+		}
+		@else if $i == 4 {
+			$ii: 2;
+		}
+		@else if $i == 5 {
+			$ii: 2;
+		}
+		@else if $i == 6 {
+			$ii: 2;
+		}
+		@else if $i == 7 {
+			$ii: 2;
+		}
+		@else if $i == 8 {
+			$ii: 2;
+		}
+		
+	  .cols-#{$i} > .col,
+		.colsd > .col:first-child:nth-last-child(#{$i}),
+		.colsd > .col:first-child:nth-last-child(#{$i}) ~ .col {
+		  width: (((100% / $ii)) - 0.1);
+		}
+		//Custom col width
+		@each $width in $widths {
+		  $wclass: nth($width, 1);
+		  $wvalue: nth($width, 2);
+		  .cols-#{$i} > .col.#{$wclass} {
+		    width: $wvalue;
+		  }
+		}
+	}
+	
+	//Cols w/ the same width w/ margin
+	@for $i from 1 through $colnb {
+		
+		$ii: $i;
+		@if $i == 2 {
+			$ii: 1;
+		}
+		@else if $i == 3 {
+			$ii: 2;
+		}
+		@else if $i == 4 {
+			$ii: 2;
+		}
+		@else if $i == 5 {
+			$ii: 2;
+		}
+		@else if $i == 6 {
+			$ii: 2;
+		}
+		@else if $i == 7 {
+			$ii: 2;
+		}
+		@else if $i == 8 {
+			$ii: 2;
+		}
+		
+	  .cols-#{$i}.colsm > .col,
+		.colsd.colsm > .col:first-child:nth-last-child(#{$i}),
+		.colsd.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
+		  width: (((100% / $ii) - (($m*($ii - 1)) / $ii)) - 0.1);
+		}
+		//Custom col width
+		@each $width in $widths {
+		  $wclass: nth($width, 1);
+		  $wvalue: nth($width, 2);
+		  .cols-#{$i}.colsm > .col.#{$wclass} {
+		    width: ($wvalue - (($m*($ii - 1)) / $ii) - 0.1);
+		  }
+		}
+		.cols-#{$i}.colsm > .col:nth-child(#{$i}n+1) {
+		  margin-left: $m;
+		}
+		.cols-#{$i}.colsm > .col:nth-child(#{$ii}n+1) {
+		  margin-left: 0;
+		}
+	}
+	
 }
