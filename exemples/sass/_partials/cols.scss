@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.6
+	cols.fab 0.8
 	
 */
 
@@ -16,9 +16,8 @@ $mw: 1200;
 // Widths
 $widths: w20 20%, w25 25%, w30 30%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 66.66%, w70 70%, w75 75%, w80 80%;
 
-// Var by breakpoint: class; breakpoint width; margin-left; margin-bottom; widths classes;
-$breakpoints:full 3000 3% 40px $widths, bp1 1024 3% 3vw $widths, bp2 768 3 40 $widths, bp3 568 3 40 $widths, bp4 480px 3 40 $widths;
-
+// Var by breakpoint: class; breakpoint width; margin-left; margin-top; widths classes;
+$breakpoints:full 3000 3% 40px $widths, bp1 1024 3% 3vw $widths, bp2 768 3 3vw $widths, bp3 568 3% 40 $widths, bp4 480px 3% 3vw $widths;
 
 
 /* --- CLASSES --- */
@@ -45,51 +44,70 @@ $breakpoints:full 3000 3% 40px $widths, bp1 1024 3% 3vw $widths, bp2 768 3 40 $w
   $bpclass: nth($breakpoint, 1);
   $bpvalue: nth($breakpoint, 2);
   $bpm: nth($breakpoint, 3);
-  $bpmb: nth($breakpoint, 4);
+  $bpmt: nth($breakpoint, 4);
   $bpwidths: nth($breakpoint, 5);
   
   @media all and (max-width: #{$bpvalue}px) {
     
-    // Margins
+    // Margin-left
     .cols.colsm > .col+.col { margin-left: $bpm; }
-    // Add margin-bottom to .colsm
-    .cols.colsm > .col { margin-bottom: $bpmb; }
     
     //Cols w/ the same width w/o margin
     @for $i from 1 through $colnb {
+      
       .cols-#{$i}-#{$bpclass} > .col,
-    	.colsd > .col:first-child:nth-last-child(#{$i}),
-    	.colsd > .col:first-child:nth-last-child(#{$i}) ~ .col {
+    	.colsd-#{$bpclass} > .col:first-child:nth-last-child(#{$i}),
+    	.colsd-#{$bpclass} > .col:first-child:nth-last-child(#{$i}) ~ .col {
     	  width: ((100% / $i));
     	}
+    	
     	//Custom col width
     	@each $width in $bpwidths {
     	  $wclass: nth($width, 1);
     	  $wvalue: nth($width, 2);
-    	  .cols-#{$i}-#{$bpclass} > .col.#{$wclass} {
+    	  .cols-#{$i}-#{$bpclass} > .col.#{$wclass}-#{$bpclass} {
     	    width: $wvalue;
     	  }
     	}
+    	
     }
     
     //Cols w/ the same width w/ margin
     @for $i from 1 through $colnb {
+      
       .cols-#{$i}-#{$bpclass}.colsm > .col,
-    	.colsd.colsm > .col:first-child:nth-last-child(#{$i}),
-    	.colsd.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
+    	.colsd-#{$bpclass}.colsm > .col:first-child:nth-last-child(#{$i}),
+    	.colsd-#{$bpclass}.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
     	  width: (((100% / $i) - (($bpm*($i - 1)) / $i)) - 0.1);
     	}
+    	
+    	// Add margin-top to .colsm
+    	@for $ii from 1 through $colnb {
+      	.cols-#{$i}-#{$bpclass}.colsm > .col:nth-child(#{$ii}) {
+        	margin-top: $bpmt;
+      	}
+      }
+    	
+    	//Prevent margin-top on first row
+    	@for $iii from 1 through $i {
+      	.cols-#{$i}-#{$bpclass}.colsm > .col:nth-child(#{$iii}) {
+        	margin-top: 0;
+      	}
+      }
+    	
     	//Custom col width
     	@each $width in $bpwidths {
     	  $wclass: nth($width, 1);
     	  $wvalue: nth($width, 2);
-    	  .cols-#{$i}-#{$bpclass}.colsm > .col.#{$wclass} {
+    	  .cols-#{$i}-#{$bpclass}.colsm > .col.#{$wclass}-#{$bpclass} {
     	    width: ($wvalue - (($bpm*($i - 1)) / $i) - 0.1);
     	  }
     	}
+    	
     	.cols-#{$i}-#{$bpclass}.colsm > .col:nth-child(#{$i}n+1) {
     	  margin-left: 0;
     	}
+    	
     }
 
   }

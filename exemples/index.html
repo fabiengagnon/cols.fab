@@ -9,25 +9,26 @@
 <body>
 	
 	<h1>cols.fab</h1>
-	<h2>Explicit (.cols-3)</h2>
-	<p>3 columns</p>
-	<div class="cols cols-3">
+	<h2>Explicit (.cols-4-full .cols-2-bp1 .cols-1-bp2)</h2>
+	<p>4 columns</p>
+	<div class="cols cols-4-full cols-2-bp1 cols-1-bp2">
 		<div class="col" style="height: 500px">1</div>
 		<div class="col">2</div>
 		<div class="col">3</div>
+		<div class="col">4</div>
 	</div>
 	
-	<h2>Dynamic (.colsd)</h2>
+	<h2>Dynamic (.colsd-full)</h2>
 	<p>S'adapte au nombre de .col à l'intérieur</p>
-	<div class="cols colsd">
+	<div class="cols colsd-full">
 		<div class="col">1</div>
 		<div class="col">2</div>
 		<div class="col">3</div>
 	</div>
 	
-	<h2>Explicit (.cols-4, .colsm)</h2>
+	<h2>Explicit (.cols-4-full .cols-2-bp1 .cols-1-bp2 .colsm)</h2>
 	<p>4 columns avec marge</p>
-	<div class="cols cols-4 colsm">
+	<div class="cols cols-4-full cols-2-bp1 cols-1-bp2 colsm">
 		<div class="col">1</div>
 		<div class="col">2</div>
 		<div class="col">3</div>
@@ -36,7 +37,7 @@
 	
 	<h2>Dynamic (.colsd, colsm)</h2>
 	<p>Dynamic avec marge</p>
-	<div class="cols colsd colsm">
+	<div class="cols colsd-full colsm">
 		<div class="col">1</div>
 		<div class="col">2</div>
 		<div class="col">3</div>
@@ -46,20 +47,22 @@
 	
 	<h2>Columns avec différents widths (.col.w33, .col.w66)</h2>
 	<p>Fonctionne seulement Explicit</p>
-	<div class="cols cols-2">
-		<div class="col w33">1</div>
-		<div class="col w66">2</div>
+	<div class="cols cols-2-full">
+		<div class="col w33-full">1</div>
+		<div class="col w66-full">2</div>
 	</div>
 	
-	<h2>Sur plusieurs rows (.cols-3)</h2>
+	<h2>Sur plusieurs rows (.cols-4-full)</h2>
 	<p>Fonctionne seulement Explicit</p>
-	<div class="cols cols-3 colsm">
+	<div class="cols cols-4-full cols-2-bp1 cols-1-bp2 colsm">
 		<div class="col">1</div>
 		<div class="col">2</div>
 		<div class="col">3</div>
 		<div class="col">4</div>
 		<div class="col">5</div>
 		<div class="col">6</div>
+		<div class="col">7</div>
+		<div class="col">8</div>
 	</div>
 	
 </body>
