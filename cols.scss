@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.8
+	cols.fab 0.8.1
 	
 */
 
@@ -8,16 +8,38 @@
 /* --- VARS --- */
 
 // Max cols number
-$colnb: 8;
+$colnb: 12;
 
 // Container max-width
-$mw: 1200;
+$mw: 1280;
 
 // Widths
-$widths: w20 20%, w25 25%, w30 30%, w33 33.33%, w40 40%, w50 50%, w60 60%, w66 66.66%, w70 70%, w75 75%, w80 80%;
+$widths: 
+	w20 20%, 
+	w25 25%, 
+	w30 30%, 
+	w33 33.33%, 
+	w40 40%, 
+	w50 50%, 
+	w60 60%, 
+	w66 66.66%, 
+	w70 70%, 
+	w75 75%, 
+	w80 80%, 
+	w100 100%
+;
 
 // Var by breakpoint: class; breakpoint width; margin-left; margin-top; widths classes;
-$breakpoints:full 3000 3% 40px $widths, bp1 1024 3% 3vw $widths, bp2 768 3 3vw $widths, bp3 568 3% 40 $widths, bp4 480px 3% 3vw $widths;
+$breakpoints: 
+	full 5000 2.3% 30px $widths, 
+	bp1280 1280 2.3% 2.3vw $widths, 
+	bp1024 1024 2.3% 2.3vw $widths, 
+	bp900 900 2.3% 2.3vw $widths, 
+	bp768 768 2.3% 2.3vw $widths, 
+	bp600 600 2.3% 2.3vw $widths, 
+	bp480 480 2.3% 2.3vw $widths, 
+	bp400 400 2.3% 2.3vw $widths
+;
 
 
 /* --- CLASSES --- */
@@ -28,14 +50,9 @@ $breakpoints:full 3000 3% 40px $widths, bp1 1024 3% 3vw $widths, bp2 768 3 3vw $
 [class*='cols-'] {
 	flex-wrap: wrap;
 }
-
-// Basic widths class
-@each $width in $widths {
-  $wclass: nth($width, 1);
-  $wvalue: nth($width, 2);
-  .#{$wclass} {
-    width: $wvalue;
-  }
+.col {
+  position: relative;
+  box-sizing: border-box;
 }
 
 // Breakpoints
@@ -48,6 +65,15 @@ $breakpoints:full 3000 3% 40px $widths, bp1 1024 3% 3vw $widths, bp2 768 3 3vw $
   $bpwidths: nth($breakpoint, 5);
   
   @media all and (max-width: #{$bpvalue}px) {
+    
+    // Basic widths class
+    @each $width in $bpwidths {
+      $wclass: nth($width, 1);
+      $wvalue: nth($width, 2);
+      .#{$wclass}-#{$bpclass} {
+        width: $wvalue;
+      }
+    }
     
     // Margin-left
     .cols.colsm > .col+.col { margin-left: $bpm; }
