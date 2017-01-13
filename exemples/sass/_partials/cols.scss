@@ -13,7 +13,7 @@ $colnb: 6;
 // Container max-width
 $mw: 1280;
 
-// Widths
+// Widths (%)
 $widths: 
 	w20 20%, 
 	w25 25%, 
@@ -81,7 +81,7 @@ $breakpoints:
 			margin-top: 0;
 		}
     
-    //Cols w/ the same width w/o margin
+    //Cols w/o margin
     @for $i from 1 through $colnb {
       
       .cols-#{$i}-#{$bpclass} > .col,
@@ -101,7 +101,7 @@ $breakpoints:
     	
     }
     
-    //Cols w/ the same width w/ margin
+    //Cols w/ margin
     @for $i from 1 through $colnb {
       
       .cols-#{$i}-#{$bpclass}.colsm > .col,
