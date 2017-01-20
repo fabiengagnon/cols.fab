@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.8.2
+	cols.fab 0.8.3
 	
 */
 
@@ -32,9 +32,9 @@ $widths:
 // Var by breakpoint: class; breakpoint width; margin (px); widths classes;
 $breakpoints: 
 	full 5000 30 $widths, 
-	bp1024 1024 30 $widths, 
-	bp768 768 30 $widths, 
-	bp480 480 30 $widths
+	1024 1024 20 $widths, 
+	768 768 20 $widths, 
+	480 480 20 $widths
 ;
 
 
@@ -44,6 +44,7 @@ $breakpoints:
   display: flex;
 }
 [class*='cols-'] {
+	display: flex;
 	flex-wrap: wrap;
 }
 .col {
@@ -72,12 +73,12 @@ $breakpoints:
     }
     
     // Margin-left
-    .cols.colsm > .col+.col { 
+    [class*='cols-'].cols-m > .col+.col { 
 	    margin-left: ($bpmp * 1%);
 	    margin-top: #{$bpmp}vw;
 	  }
 	  
-	  .cols.colsm[class*='colsd-'] > .col+.col {
+	  [class*='cols-d-'].cols-m > .col+.col {
 			margin-top: 0;
 		}
     
@@ -85,8 +86,8 @@ $breakpoints:
     @for $i from 1 through $colnb {
       
       .cols-#{$i}-#{$bpclass} > .col,
-    	.colsd-#{$bpclass} > .col:first-child:nth-last-child(#{$i}),
-    	.colsd-#{$bpclass} > .col:first-child:nth-last-child(#{$i}) ~ .col {
+    	.cols-d-#{$bpclass} > .col:first-child:nth-last-child(#{$i}),
+    	.cols-d-#{$bpclass} > .col:first-child:nth-last-child(#{$i}) ~ .col {
     	  width: ((100% / $i));
     	}
     	
@@ -104,15 +105,15 @@ $breakpoints:
     //Cols w/ margin
     @for $i from 1 through $colnb {
       
-      .cols-#{$i}-#{$bpclass}.colsm > .col,
-    	.colsd-#{$bpclass}.colsm > .col:first-child:nth-last-child(#{$i}),
-    	.colsd-#{$bpclass}.colsm > .col:first-child:nth-last-child(#{$i}) ~ .col {
+      .cols-#{$i}-#{$bpclass}.cols-m > .col,
+    	.cols-d-#{$bpclass}.cols-m > .col:first-child:nth-last-child(#{$i}),
+    	.cols-d-#{$bpclass}.cols-m > .col:first-child:nth-last-child(#{$i}) ~ .col {
     	  width: (((100% / $i) - (($bpmp*($i - 1)) / $i)));
     	}
     	
     	//Prevent margin-top on first row
     	@for $iii from 1 through $i {
-      	.cols-#{$i}-#{$bpclass}.colsm > .col:nth-child(#{$iii}) {
+      	.cols-#{$i}-#{$bpclass}.cols-m > .col:nth-child(#{$iii}) {
         	margin-top: 0;
       	}
       }
@@ -121,12 +122,12 @@ $breakpoints:
     	@each $width in $bpwidths {
     	  $wclass: nth($width, 1);
     	  $wvalue: nth($width, 2);
-    	  .cols-#{$i}-#{$bpclass}.colsm > .col.#{$wclass}-#{$bpclass} {
+    	  .cols-#{$i}-#{$bpclass}.cols-m > .col.#{$wclass}-#{$bpclass} {
     	    width: ($wvalue - (($bpmp*($i - 1)) / $i));
     	  }
     	}
     	
-    	.cols-#{$i}-#{$bpclass}.colsm > .col:nth-child(#{$i}n+1) {
+    	.cols-#{$i}-#{$bpclass}.cols-m > .col:nth-child(#{$i}n+1) {
     	  margin-left: 0;
     	}
     	
