@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.8.3
+	cols.fab 0.8.4
 	
 */
 /* --- VARS --- */
@@ -11,6 +11,9 @@
 [class*='cols-'] {
   display: flex;
   flex-wrap: wrap; }
+
+.cols-c {
+  justify-content: center; }
 
 .col {
   position: relative;
