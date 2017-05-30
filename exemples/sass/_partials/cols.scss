@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.8.4
+	cols.fab 0.8.5
 	
 */
 
@@ -12,6 +12,12 @@ $colnb: 6;
 
 // Container max-width
 $mw: 1280;
+
+// Container class
+$container: container;
+
+// Default margin
+$m: 30;
 
 // Widths (%)
 $widths: 
@@ -31,7 +37,8 @@ $widths:
 
 // Var by breakpoint: class; breakpoint width; margin (px); widths classes;
 $breakpoints: 
-	full 5000 30 $widths, 
+	full 5000 $m $widths, 
+	$mw $mw $m $widths,
 	1024 1024 20 $widths, 
 	768 768 20 $widths, 
 	480 480 20 $widths
@@ -45,7 +52,9 @@ $breakpoints:
 }
 [class*='cols-'] {
 	display: flex;
-	flex-wrap: wrap;
+  @include display-flex;
+  flex-wrap: wrap;
+  @include flex_wrap(wrap);
 }
 .cols-c {
   justify-content: center;
@@ -75,11 +84,22 @@ $breakpoints:
       }
     }
     
-    // Margin-left
+    // Margins
     [class*='cols-'].cols-m > .col+.col { 
 	    margin-left: ($bpmp * 1%);
-	    margin-top: #{$bpmp}vw;
+		  margin-top: #{$bpmp}vw;
 	  }
+	  // margin if inside container
+	  .#{$container} [class*='cols-'].cols-m > .col+.col {
+			
+			@if $bpvalue > $mw {
+	    	margin-top: #{$bpm}px;
+	    }
+	    @else {
+		    margin-top: #{$bpmp}vw;
+	    }
+			
+		}
 	  
 	  [class*='cols-d-'].cols-m > .col+.col {
 			margin-top: 0;
@@ -116,7 +136,7 @@ $breakpoints:
     	
     	//Prevent margin-top on first row
     	@for $iii from 1 through $i {
-      	.cols-#{$i}-#{$bpclass}.cols-m > .col:nth-child(#{$iii}) {
+      	.cols-#{$i}-#{$bpclass}.cols-m > .col:nth-child(#{$iii}), .#{$container} .cols-#{$i}-#{$bpclass}.cols-m > .col:nth-child(#{$iii}) {
         	margin-top: 0;
       	}
       }

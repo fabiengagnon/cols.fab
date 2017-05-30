@@ -9,9 +9,9 @@
 <body>
 	
 	<h1>cols.fab</h1>
-	<h2>Explicit (.cols-4-full .cols-2-bp1024 .cols-1-bp900)</h2>
+	<h2>Explicit (.cols-4-full .cols-2-1024 .cols-1-900)</h2>
 	<p>4 columns</p>
-	<div class="cols cols-4-full cols-2-bp1024 cols-1-bp900">
+	<div class="cols cols-4-full cols-2-1024 cols-1-900">
 		<div class="col" style="height: 500px">1</div>
 		<div class="col">2</div>
 		<div class="col">3</div>
@@ -26,43 +26,32 @@
 		<div class="col">3</div>
 	</div>
 	
-	<h2>Explicit (cols cols-4-full cols-2-bp1024 cols-1-bp900)</h2>
+	<h2>Explicit (cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480)</h2>
 	<p>4 columns avec marge</p>
-	<div class="cols cols-4-full cols-2-bp1024 cols-1-bp900 colsm">
-		<div class="col">1</div>
-		<div class="col">2</div>
-		<div class="col">3</div>
-		<div class="col">4</div>
+	<div class="container">
+		<div class="cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m">
+			<div class="col">1</div>
+			<div class="col">2</div>
+			<div class="col">3</div>
+			<div class="col">4</div>
+			<div class="col">1</div>
+			<div class="col">2</div>
+			<div class="col">3</div>
+			<div class="col">4</div>
+		</div>
 	</div>
 	
-	<h2>Dynamic (.colsd, colsm)</h2>
-	<p>Dynamic avec marge</p>
-	<div class="cols cols-3-bp1024 colsd-full colsm">
-		<div class="col">1</div>
-		<div class="col">2</div>
-		<div class="col">3</div>
-		<div class="col">4</div>
-		<div class="col">5</div>
-	</div>
-	
-	<h2>Columns avec différents widths (.col.w33, .col.w66)</h2>
-	<p>Fonctionne seulement Explicit</p>
-	<div class="cols cols-2-full">
-		<div class="col w33-full">1</div>
-		<div class="col w66-full">2</div>
-	</div>
-	
-	<h2>Sur plusieurs rows (.cols-4-full)</h2>
-	<p>Fonctionne seulement Explicit</p>
-	<div class="cols cols-4-full cols-2-bp1 cols-1-bp2 colsm">
-		<div class="col">1</div>
-		<div class="col">2</div>
-		<div class="col">3</div>
-		<div class="col">4</div>
-		<div class="col">5</div>
-		<div class="col">6</div>
-		<div class="col">7</div>
-		<div class="col">8</div>
+	<div class="">
+		<div class="cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m">
+			<div class="col">1</div>
+			<div class="col">2</div>
+			<div class="col">3</div>
+			<div class="col">4</div>
+			<div class="col">1</div>
+			<div class="col">2</div>
+			<div class="col">3</div>
+			<div class="col">4</div>
+		</div>
 	</div>
 	
 </body>
