@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.8.5
+	cols.fab 0.8.6
 	
 */
 
@@ -58,6 +58,9 @@ $breakpoints:
 }
 .cols-c {
   justify-content: center;
+}
+.cols-a {
+  align-items: center;
 }
 .col {
   position: relative;

@@ -47,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*
 	
-	cols.fab 0.8.5
+	cols.fab 0.8.6
 	
 */
 /* --- VARS --- */
@@ -65,6 +65,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .cols-c {
   justify-content: center; }
+
+.cols-a {
+  align-items: center; }
 
 .col {
   position: relative;
