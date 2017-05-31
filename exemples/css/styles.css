@@ -47,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*
 	
-	cols.fab 0.8.6
+	cols.fab 0.8.6.1
 	
 */
 /* --- VARS --- */
@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   box-sizing: border-box; }
 
-@media all and (max-width: 5000px) {
+@media all and (min-width: 1281px) {
   .w20-full {
     width: 20%; }
 

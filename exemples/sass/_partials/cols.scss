@@ -1,6 +1,6 @@
 /*
 	
-	cols.fab 0.8.6
+	cols.fab 0.8.6.1
 	
 */
 
@@ -37,7 +37,7 @@ $widths:
 
 // Var by breakpoint: class; breakpoint width; margin (px); widths classes;
 $breakpoints: 
-	full 5000 $m $widths, 
+	full $mw+1 $m $widths, 
 	$mw $mw $m $widths,
 	1024 1024 20 $widths, 
 	768 768 20 $widths, 
@@ -75,9 +75,16 @@ $breakpoints:
   $bpm: nth($breakpoint, 3);
   $bpwidths: nth($breakpoint, 4);
   $bpmp: $bpm * 100 / if($bpvalue > $mw, $mw, $bpvalue);
+  $bpmq: "all and (max-width: #{$bpvalue}px)";
   
-  @media all and (max-width: #{$bpvalue}px) {
-    
+  @if $bpvalue > $mw {
+  
+  	$bpmq: "all and (min-width: #{$bpvalue}px)";
+  	
+	}
+  
+  @media #{$bpmq} { 
+  
     // Basic widths class
     @each $width in $bpwidths {
       $wclass: nth($width, 1);
