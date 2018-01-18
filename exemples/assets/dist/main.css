@@ -1,0 +1,4212 @@
+/*
+	
+	cols.fab 0.8.7
+	
+*/
+/* --- VARS --- */
+/* --- CLASSES --- */
+/* line 50, exemples/assets/scss/_partials/cols.scss */
+.cols {
+  display: -webkit-box;
+  display: flex;
+}
+
+/* line 53, exemples/assets/scss/_partials/cols.scss */
+[class*='cols-'] {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 57, exemples/assets/scss/_partials/cols.scss */
+.cols-c {
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/* line 60, exemples/assets/scss/_partials/cols.scss */
+.cols-a {
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* line 63, exemples/assets/scss/_partials/cols.scss */
+.col {
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media all and (min-width: 1281px) {
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w20-full {
+    width: 20%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w25-full {
+    width: 25%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w30-full {
+    width: 30%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w33-full {
+    width: 33.33%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w40-full {
+    width: 40%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w50-full {
+    width: 50%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w60-full {
+    width: 60%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w66-full {
+    width: 66.66%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w70-full {
+    width: 70%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w75-full {
+    width: 75%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w80-full {
+    width: 80%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w100-full {
+    width: 100%;
+  }
+  /* line 98, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-'].cols-m > .col + .col {
+    margin-left: 2.34375%;
+    margin-top: 2.34375vw;
+  }
+  /* line 103, exemples/assets/scss/_partials/cols.scss */
+  .container [class*='cols-'].cols-m > .col + .col {
+    margin-top: 30px;
+  }
+  /* line 114, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-d-'].cols-m > .col + .col {
+    margin-top: 0;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(1),
+  .cols-d-full > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(2),
+  .cols-d-full > .col:first-child:nth-last-child(2) ~ .col {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(3),
+  .cols-d-full > .col:first-child:nth-last-child(3) ~ .col {
+    width: 33.33333%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(4),
+  .cols-d-full > .col:first-child:nth-last-child(4) ~ .col {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(5),
+  .cols-d-full > .col:first-child:nth-last-child(5) ~ .col {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(6),
+  .cols-d-full > .col:first-child:nth-last-child(6) ~ .col {
+    width: 16.66667%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(1),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col:nth-child(1), .container .cols-1-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w20-full {
+    width: 20%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w25-full {
+    width: 25%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w30-full {
+    width: 30%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w40-full {
+    width: 40%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w50-full {
+    width: 50%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w60-full {
+    width: 60%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w70-full {
+    width: 70%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w75-full {
+    width: 75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w80-full {
+    width: 80%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w100-full {
+    width: 100%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col:nth-child(1n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(2),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(2) ~ .col {
+    width: 48.82812%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col:nth-child(1), .container .cols-2-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col:nth-child(2), .container .cols-2-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w20-full {
+    width: 18.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w25-full {
+    width: 23.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w30-full {
+    width: 28.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w33-full {
+    width: 32.15812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w40-full {
+    width: 38.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w50-full {
+    width: 48.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w60-full {
+    width: 58.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w66-full {
+    width: 65.48812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w70-full {
+    width: 68.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w75-full {
+    width: 73.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w80-full {
+    width: 78.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w100-full {
+    width: 98.82812%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(3),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(3) ~ .col {
+    width: 31.77083%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(1), .container .cols-3-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(2), .container .cols-3-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(3), .container .cols-3-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w20-full {
+    width: 18.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w25-full {
+    width: 23.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w30-full {
+    width: 28.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w33-full {
+    width: 31.7675%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w40-full {
+    width: 38.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w50-full {
+    width: 48.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w60-full {
+    width: 58.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w66-full {
+    width: 65.0975%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w70-full {
+    width: 68.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w75-full {
+    width: 73.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w80-full {
+    width: 78.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w100-full {
+    width: 98.4375%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(4),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(4) ~ .col {
+    width: 23.24219%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(1), .container .cols-4-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(2), .container .cols-4-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(3), .container .cols-4-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(4), .container .cols-4-full.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w20-full {
+    width: 18.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w25-full {
+    width: 23.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w30-full {
+    width: 28.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w33-full {
+    width: 31.57219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w40-full {
+    width: 38.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w50-full {
+    width: 48.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w60-full {
+    width: 58.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w66-full {
+    width: 64.90219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w70-full {
+    width: 68.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w75-full {
+    width: 73.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w80-full {
+    width: 78.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w100-full {
+    width: 98.24219%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(5),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(5) ~ .col {
+    width: 18.125%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(1), .container .cols-5-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(2), .container .cols-5-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(3), .container .cols-5-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(4), .container .cols-5-full.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(5), .container .cols-5-full.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w20-full {
+    width: 18.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w25-full {
+    width: 23.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w30-full {
+    width: 28.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w33-full {
+    width: 31.455%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w40-full {
+    width: 38.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w50-full {
+    width: 48.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w60-full {
+    width: 58.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w66-full {
+    width: 64.785%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w70-full {
+    width: 68.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w75-full {
+    width: 73.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w80-full {
+    width: 78.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w100-full {
+    width: 98.125%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(5n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(6),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(6) ~ .col {
+    width: 14.71354%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(1), .container .cols-6-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(2), .container .cols-6-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(3), .container .cols-6-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(4), .container .cols-6-full.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(5), .container .cols-6-full.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(6), .container .cols-6-full.cols-m > .col:nth-child(6) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w20-full {
+    width: 18.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w25-full {
+    width: 23.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w30-full {
+    width: 28.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w33-full {
+    width: 31.37687%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w40-full {
+    width: 38.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w50-full {
+    width: 48.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w60-full {
+    width: 58.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w66-full {
+    width: 64.70687%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w70-full {
+    width: 68.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w75-full {
+    width: 73.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w80-full {
+    width: 78.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w100-full {
+    width: 98.04688%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(6n+1) {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w20-full {
+    width: 20%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w25-full {
+    width: 25%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w30-full {
+    width: 30%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w33-full {
+    width: 33.33%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w40-full {
+    width: 40%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w50-full {
+    width: 50%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w60-full {
+    width: 60%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w66-full {
+    width: 66.66%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w70-full {
+    width: 70%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w75-full {
+    width: 75%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w80-full {
+    width: 80%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w100-full {
+    width: 100%;
+  }
+  /* line 98, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-'].cols-m > .col + .col {
+    margin-left: 2.34375%;
+    margin-top: 2.34375vw;
+  }
+  /* line 103, exemples/assets/scss/_partials/cols.scss */
+  .container [class*='cols-'].cols-m > .col + .col {
+    margin-top: 2.34375vw;
+  }
+  /* line 114, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-d-'].cols-m > .col + .col {
+    margin-top: 0;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(1),
+  .cols-d-full > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(2),
+  .cols-d-full > .col:first-child:nth-last-child(2) ~ .col {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(3),
+  .cols-d-full > .col:first-child:nth-last-child(3) ~ .col {
+    width: 33.33333%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(4),
+  .cols-d-full > .col:first-child:nth-last-child(4) ~ .col {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(5),
+  .cols-d-full > .col:first-child:nth-last-child(5) ~ .col {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col,
+  .cols-d-full > .col:first-child:nth-last-child(6),
+  .cols-d-full > .col:first-child:nth-last-child(6) ~ .col {
+    width: 16.66667%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w20-full {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w25-full {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w30-full {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w40-full {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w50-full {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w60-full {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w70-full {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w75-full {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w80-full {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full > .col.w100-full {
+    width: 100%;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(1),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col:nth-child(1), .container .cols-1-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w20-full {
+    width: 20%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w25-full {
+    width: 25%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w30-full {
+    width: 30%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w33-full {
+    width: 33.33%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w40-full {
+    width: 40%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w50-full {
+    width: 50%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w60-full {
+    width: 60%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w66-full {
+    width: 66.66%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w70-full {
+    width: 70%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w75-full {
+    width: 75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w80-full {
+    width: 80%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col.w100-full {
+    width: 100%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-full.cols-m > .col:nth-child(1n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(2),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(2) ~ .col {
+    width: 48.82812%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col:nth-child(1), .container .cols-2-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col:nth-child(2), .container .cols-2-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w20-full {
+    width: 18.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w25-full {
+    width: 23.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w30-full {
+    width: 28.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w33-full {
+    width: 32.15812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w40-full {
+    width: 38.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w50-full {
+    width: 48.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w60-full {
+    width: 58.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w66-full {
+    width: 65.48812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w70-full {
+    width: 68.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w75-full {
+    width: 73.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w80-full {
+    width: 78.82812%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col.w100-full {
+    width: 98.82812%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-full.cols-m > .col:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(3),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(3) ~ .col {
+    width: 31.77083%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(1), .container .cols-3-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(2), .container .cols-3-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(3), .container .cols-3-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w20-full {
+    width: 18.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w25-full {
+    width: 23.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w30-full {
+    width: 28.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w33-full {
+    width: 31.7675%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w40-full {
+    width: 38.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w50-full {
+    width: 48.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w60-full {
+    width: 58.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w66-full {
+    width: 65.0975%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w70-full {
+    width: 68.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w75-full {
+    width: 73.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w80-full {
+    width: 78.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col.w100-full {
+    width: 98.4375%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-full.cols-m > .col:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(4),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(4) ~ .col {
+    width: 23.24219%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(1), .container .cols-4-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(2), .container .cols-4-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(3), .container .cols-4-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(4), .container .cols-4-full.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w20-full {
+    width: 18.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w25-full {
+    width: 23.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w30-full {
+    width: 28.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w33-full {
+    width: 31.57219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w40-full {
+    width: 38.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w50-full {
+    width: 48.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w60-full {
+    width: 58.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w66-full {
+    width: 64.90219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w70-full {
+    width: 68.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w75-full {
+    width: 73.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w80-full {
+    width: 78.24219%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col.w100-full {
+    width: 98.24219%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-full.cols-m > .col:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(5),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(5) ~ .col {
+    width: 18.125%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(1), .container .cols-5-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(2), .container .cols-5-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(3), .container .cols-5-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(4), .container .cols-5-full.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(5), .container .cols-5-full.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w20-full {
+    width: 18.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w25-full {
+    width: 23.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w30-full {
+    width: 28.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w33-full {
+    width: 31.455%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w40-full {
+    width: 38.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w50-full {
+    width: 48.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w60-full {
+    width: 58.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w66-full {
+    width: 64.785%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w70-full {
+    width: 68.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w75-full {
+    width: 73.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w80-full {
+    width: 78.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col.w100-full {
+    width: 98.125%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-full.cols-m > .col:nth-child(5n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col,
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(6),
+  .cols-d-full.cols-m > .col:first-child:nth-last-child(6) ~ .col {
+    width: 14.71354%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(1), .container .cols-6-full.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(2), .container .cols-6-full.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(3), .container .cols-6-full.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(4), .container .cols-6-full.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(5), .container .cols-6-full.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(6), .container .cols-6-full.cols-m > .col:nth-child(6) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w20-full {
+    width: 18.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w25-full {
+    width: 23.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w30-full {
+    width: 28.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w33-full {
+    width: 31.37687%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w40-full {
+    width: 38.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w50-full {
+    width: 48.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w60-full {
+    width: 58.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w66-full {
+    width: 64.70687%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w70-full {
+    width: 68.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w75-full {
+    width: 73.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w80-full {
+    width: 78.04688%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col.w100-full {
+    width: 98.04688%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-full.cols-m > .col:nth-child(6n+1) {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w20-1024 {
+    width: 20%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w25-1024 {
+    width: 25%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w30-1024 {
+    width: 30%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w33-1024 {
+    width: 33.33%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w40-1024 {
+    width: 40%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w50-1024 {
+    width: 50%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w60-1024 {
+    width: 60%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w66-1024 {
+    width: 66.66%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w70-1024 {
+    width: 70%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w75-1024 {
+    width: 75%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w80-1024 {
+    width: 80%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w100-1024 {
+    width: 100%;
+  }
+  /* line 98, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-'].cols-m > .col + .col {
+    margin-left: 1.95312%;
+    margin-top: 1.95312vw;
+  }
+  /* line 103, exemples/assets/scss/_partials/cols.scss */
+  .container [class*='cols-'].cols-m > .col + .col {
+    margin-top: 1.95312vw;
+  }
+  /* line 114, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-d-'].cols-m > .col + .col {
+    margin-top: 0;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col,
+  .cols-d-1024 > .col:first-child:nth-last-child(1),
+  .cols-d-1024 > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024 > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col,
+  .cols-d-1024 > .col:first-child:nth-last-child(2),
+  .cols-d-1024 > .col:first-child:nth-last-child(2) ~ .col {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024 > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col,
+  .cols-d-1024 > .col:first-child:nth-last-child(3),
+  .cols-d-1024 > .col:first-child:nth-last-child(3) ~ .col {
+    width: 33.33333%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024 > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col,
+  .cols-d-1024 > .col:first-child:nth-last-child(4),
+  .cols-d-1024 > .col:first-child:nth-last-child(4) ~ .col {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024 > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col,
+  .cols-d-1024 > .col:first-child:nth-last-child(5),
+  .cols-d-1024 > .col:first-child:nth-last-child(5) ~ .col {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024 > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col,
+  .cols-d-1024 > .col:first-child:nth-last-child(6),
+  .cols-d-1024 > .col:first-child:nth-last-child(6) ~ .col {
+    width: 16.66667%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024 > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col,
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(1),
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col:nth-child(1), .container .cols-1-1024.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w20-1024 {
+    width: 20%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w25-1024 {
+    width: 25%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w30-1024 {
+    width: 30%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w33-1024 {
+    width: 33.33%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w40-1024 {
+    width: 40%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w50-1024 {
+    width: 50%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w60-1024 {
+    width: 60%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w66-1024 {
+    width: 66.66%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w70-1024 {
+    width: 70%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w75-1024 {
+    width: 75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w80-1024 {
+    width: 80%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col.w100-1024 {
+    width: 100%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-1024.cols-m > .col:nth-child(1n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col,
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(2),
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(2) ~ .col {
+    width: 49.02344%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col:nth-child(1), .container .cols-2-1024.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col:nth-child(2), .container .cols-2-1024.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w20-1024 {
+    width: 19.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w25-1024 {
+    width: 24.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w30-1024 {
+    width: 29.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w33-1024 {
+    width: 32.35344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w40-1024 {
+    width: 39.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w50-1024 {
+    width: 49.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w60-1024 {
+    width: 59.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w66-1024 {
+    width: 65.68344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w70-1024 {
+    width: 69.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w75-1024 {
+    width: 74.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w80-1024 {
+    width: 79.02344%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col.w100-1024 {
+    width: 99.02344%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-1024.cols-m > .col:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col,
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(3),
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(3) ~ .col {
+    width: 32.03125%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col:nth-child(1), .container .cols-3-1024.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col:nth-child(2), .container .cols-3-1024.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col:nth-child(3), .container .cols-3-1024.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w20-1024 {
+    width: 18.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w25-1024 {
+    width: 23.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w30-1024 {
+    width: 28.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w33-1024 {
+    width: 32.02792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w40-1024 {
+    width: 38.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w50-1024 {
+    width: 48.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w60-1024 {
+    width: 58.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w66-1024 {
+    width: 65.35792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w70-1024 {
+    width: 68.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w75-1024 {
+    width: 73.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w80-1024 {
+    width: 78.69792%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col.w100-1024 {
+    width: 98.69792%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-1024.cols-m > .col:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col,
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(4),
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(4) ~ .col {
+    width: 23.53516%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col:nth-child(1), .container .cols-4-1024.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col:nth-child(2), .container .cols-4-1024.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col:nth-child(3), .container .cols-4-1024.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col:nth-child(4), .container .cols-4-1024.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w20-1024 {
+    width: 18.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w25-1024 {
+    width: 23.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w30-1024 {
+    width: 28.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w33-1024 {
+    width: 31.86516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w40-1024 {
+    width: 38.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w50-1024 {
+    width: 48.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w60-1024 {
+    width: 58.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w66-1024 {
+    width: 65.19516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w70-1024 {
+    width: 68.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w75-1024 {
+    width: 73.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w80-1024 {
+    width: 78.53516%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col.w100-1024 {
+    width: 98.53516%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-1024.cols-m > .col:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col,
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(5),
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(5) ~ .col {
+    width: 18.4375%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col:nth-child(1), .container .cols-5-1024.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col:nth-child(2), .container .cols-5-1024.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col:nth-child(3), .container .cols-5-1024.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col:nth-child(4), .container .cols-5-1024.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col:nth-child(5), .container .cols-5-1024.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w20-1024 {
+    width: 18.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w25-1024 {
+    width: 23.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w30-1024 {
+    width: 28.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w33-1024 {
+    width: 31.7675%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w40-1024 {
+    width: 38.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w50-1024 {
+    width: 48.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w60-1024 {
+    width: 58.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w66-1024 {
+    width: 65.0975%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w70-1024 {
+    width: 68.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w75-1024 {
+    width: 73.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w80-1024 {
+    width: 78.4375%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col.w100-1024 {
+    width: 98.4375%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-1024.cols-m > .col:nth-child(5n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col,
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(6),
+  .cols-d-1024.cols-m > .col:first-child:nth-last-child(6) ~ .col {
+    width: 15.03906%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(1), .container .cols-6-1024.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(2), .container .cols-6-1024.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(3), .container .cols-6-1024.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(4), .container .cols-6-1024.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(5), .container .cols-6-1024.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(6), .container .cols-6-1024.cols-m > .col:nth-child(6) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w20-1024 {
+    width: 18.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w25-1024 {
+    width: 23.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w30-1024 {
+    width: 28.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w33-1024 {
+    width: 31.7024%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w40-1024 {
+    width: 38.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w50-1024 {
+    width: 48.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w60-1024 {
+    width: 58.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w66-1024 {
+    width: 65.0324%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w70-1024 {
+    width: 68.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w75-1024 {
+    width: 73.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w80-1024 {
+    width: 78.3724%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col.w100-1024 {
+    width: 98.3724%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-1024.cols-m > .col:nth-child(6n+1) {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w20-800 {
+    width: 20%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w25-800 {
+    width: 25%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w30-800 {
+    width: 30%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w33-800 {
+    width: 33.33%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w40-800 {
+    width: 40%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w50-800 {
+    width: 50%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w60-800 {
+    width: 60%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w66-800 {
+    width: 66.66%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w70-800 {
+    width: 70%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w75-800 {
+    width: 75%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w80-800 {
+    width: 80%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w100-800 {
+    width: 100%;
+  }
+  /* line 98, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-'].cols-m > .col + .col {
+    margin-left: 2.5%;
+    margin-top: 2.5vw;
+  }
+  /* line 103, exemples/assets/scss/_partials/cols.scss */
+  .container [class*='cols-'].cols-m > .col + .col {
+    margin-top: 2.5vw;
+  }
+  /* line 114, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-d-'].cols-m > .col + .col {
+    margin-top: 0;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col,
+  .cols-d-800 > .col:first-child:nth-last-child(1),
+  .cols-d-800 > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800 > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col,
+  .cols-d-800 > .col:first-child:nth-last-child(2),
+  .cols-d-800 > .col:first-child:nth-last-child(2) ~ .col {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800 > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col,
+  .cols-d-800 > .col:first-child:nth-last-child(3),
+  .cols-d-800 > .col:first-child:nth-last-child(3) ~ .col {
+    width: 33.33333%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800 > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col,
+  .cols-d-800 > .col:first-child:nth-last-child(4),
+  .cols-d-800 > .col:first-child:nth-last-child(4) ~ .col {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800 > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col,
+  .cols-d-800 > .col:first-child:nth-last-child(5),
+  .cols-d-800 > .col:first-child:nth-last-child(5) ~ .col {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800 > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col,
+  .cols-d-800 > .col:first-child:nth-last-child(6),
+  .cols-d-800 > .col:first-child:nth-last-child(6) ~ .col {
+    width: 16.66667%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800 > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col,
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(1),
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col:nth-child(1), .container .cols-1-800.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w20-800 {
+    width: 20%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w25-800 {
+    width: 25%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w30-800 {
+    width: 30%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w33-800 {
+    width: 33.33%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w40-800 {
+    width: 40%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w50-800 {
+    width: 50%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w60-800 {
+    width: 60%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w66-800 {
+    width: 66.66%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w70-800 {
+    width: 70%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w75-800 {
+    width: 75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w80-800 {
+    width: 80%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col.w100-800 {
+    width: 100%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-800.cols-m > .col:nth-child(1n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col,
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(2),
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(2) ~ .col {
+    width: 48.75%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col:nth-child(1), .container .cols-2-800.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col:nth-child(2), .container .cols-2-800.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w20-800 {
+    width: 18.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w25-800 {
+    width: 23.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w30-800 {
+    width: 28.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w33-800 {
+    width: 32.08%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w40-800 {
+    width: 38.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w50-800 {
+    width: 48.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w60-800 {
+    width: 58.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w66-800 {
+    width: 65.41%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w70-800 {
+    width: 68.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w75-800 {
+    width: 73.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w80-800 {
+    width: 78.75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col.w100-800 {
+    width: 98.75%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-800.cols-m > .col:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col,
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(3),
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(3) ~ .col {
+    width: 31.66667%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col:nth-child(1), .container .cols-3-800.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col:nth-child(2), .container .cols-3-800.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col:nth-child(3), .container .cols-3-800.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w20-800 {
+    width: 18.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w25-800 {
+    width: 23.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w30-800 {
+    width: 28.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w33-800 {
+    width: 31.66333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w40-800 {
+    width: 38.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w50-800 {
+    width: 48.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w60-800 {
+    width: 58.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w66-800 {
+    width: 64.99333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w70-800 {
+    width: 68.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w75-800 {
+    width: 73.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w80-800 {
+    width: 78.33333%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col.w100-800 {
+    width: 98.33333%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-800.cols-m > .col:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col,
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(4),
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(4) ~ .col {
+    width: 23.125%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col:nth-child(1), .container .cols-4-800.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col:nth-child(2), .container .cols-4-800.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col:nth-child(3), .container .cols-4-800.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col:nth-child(4), .container .cols-4-800.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w20-800 {
+    width: 18.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w25-800 {
+    width: 23.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w30-800 {
+    width: 28.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w33-800 {
+    width: 31.455%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w40-800 {
+    width: 38.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w50-800 {
+    width: 48.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w60-800 {
+    width: 58.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w66-800 {
+    width: 64.785%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w70-800 {
+    width: 68.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w75-800 {
+    width: 73.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w80-800 {
+    width: 78.125%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col.w100-800 {
+    width: 98.125%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-800.cols-m > .col:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col,
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(5),
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(5) ~ .col {
+    width: 18%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col:nth-child(1), .container .cols-5-800.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col:nth-child(2), .container .cols-5-800.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col:nth-child(3), .container .cols-5-800.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col:nth-child(4), .container .cols-5-800.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col:nth-child(5), .container .cols-5-800.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w20-800 {
+    width: 18%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w25-800 {
+    width: 23%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w30-800 {
+    width: 28%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w33-800 {
+    width: 31.33%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w40-800 {
+    width: 38%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w50-800 {
+    width: 48%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w60-800 {
+    width: 58%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w66-800 {
+    width: 64.66%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w70-800 {
+    width: 68%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w75-800 {
+    width: 73%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w80-800 {
+    width: 78%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col.w100-800 {
+    width: 98%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-800.cols-m > .col:nth-child(5n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col,
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(6),
+  .cols-d-800.cols-m > .col:first-child:nth-last-child(6) ~ .col {
+    width: 14.58333%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(1), .container .cols-6-800.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(2), .container .cols-6-800.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(3), .container .cols-6-800.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(4), .container .cols-6-800.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(5), .container .cols-6-800.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(6), .container .cols-6-800.cols-m > .col:nth-child(6) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w20-800 {
+    width: 17.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w25-800 {
+    width: 22.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w30-800 {
+    width: 27.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w33-800 {
+    width: 31.24667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w40-800 {
+    width: 37.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w50-800 {
+    width: 47.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w60-800 {
+    width: 57.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w66-800 {
+    width: 64.57667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w70-800 {
+    width: 67.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w75-800 {
+    width: 72.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w80-800 {
+    width: 77.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col.w100-800 {
+    width: 97.91667%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-800.cols-m > .col:nth-child(6n+1) {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w20-480 {
+    width: 20%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w25-480 {
+    width: 25%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w30-480 {
+    width: 30%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w33-480 {
+    width: 33.33%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w40-480 {
+    width: 40%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w50-480 {
+    width: 50%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w60-480 {
+    width: 60%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w66-480 {
+    width: 66.66%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w70-480 {
+    width: 70%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w75-480 {
+    width: 75%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w80-480 {
+    width: 80%;
+  }
+  /* line 92, exemples/assets/scss/_partials/cols.scss */
+  .w100-480 {
+    width: 100%;
+  }
+  /* line 98, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-'].cols-m > .col + .col {
+    margin-left: 4.16667%;
+    margin-top: 4.16667vw;
+  }
+  /* line 103, exemples/assets/scss/_partials/cols.scss */
+  .container [class*='cols-'].cols-m > .col + .col {
+    margin-top: 4.16667vw;
+  }
+  /* line 114, exemples/assets/scss/_partials/cols.scss */
+  [class*='cols-d-'].cols-m > .col + .col {
+    margin-top: 0;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col,
+  .cols-d-480 > .col:first-child:nth-last-child(1),
+  .cols-d-480 > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480 > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col,
+  .cols-d-480 > .col:first-child:nth-last-child(2),
+  .cols-d-480 > .col:first-child:nth-last-child(2) ~ .col {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480 > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col,
+  .cols-d-480 > .col:first-child:nth-last-child(3),
+  .cols-d-480 > .col:first-child:nth-last-child(3) ~ .col {
+    width: 33.33333%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480 > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col,
+  .cols-d-480 > .col:first-child:nth-last-child(4),
+  .cols-d-480 > .col:first-child:nth-last-child(4) ~ .col {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480 > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col,
+  .cols-d-480 > .col:first-child:nth-last-child(5),
+  .cols-d-480 > .col:first-child:nth-last-child(5) ~ .col {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480 > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 121, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col,
+  .cols-d-480 > .col:first-child:nth-last-child(6),
+  .cols-d-480 > .col:first-child:nth-last-child(6) ~ .col {
+    width: 16.66667%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 131, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480 > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col,
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(1),
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(1) ~ .col {
+    width: 100%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col:nth-child(1), .container .cols-1-480.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w20-480 {
+    width: 20%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w25-480 {
+    width: 25%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w30-480 {
+    width: 30%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w33-480 {
+    width: 33.33%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w40-480 {
+    width: 40%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w50-480 {
+    width: 50%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w60-480 {
+    width: 60%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w66-480 {
+    width: 66.66%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w70-480 {
+    width: 70%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w75-480 {
+    width: 75%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w80-480 {
+    width: 80%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col.w100-480 {
+    width: 100%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-1-480.cols-m > .col:nth-child(1n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col,
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(2),
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(2) ~ .col {
+    width: 47.91667%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col:nth-child(1), .container .cols-2-480.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col:nth-child(2), .container .cols-2-480.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w20-480 {
+    width: 17.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w25-480 {
+    width: 22.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w30-480 {
+    width: 27.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w33-480 {
+    width: 31.24667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w40-480 {
+    width: 37.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w50-480 {
+    width: 47.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w60-480 {
+    width: 57.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w66-480 {
+    width: 64.57667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w70-480 {
+    width: 67.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w75-480 {
+    width: 72.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w80-480 {
+    width: 77.91667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col.w100-480 {
+    width: 97.91667%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-2-480.cols-m > .col:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col,
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(3),
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(3) ~ .col {
+    width: 30.55556%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col:nth-child(1), .container .cols-3-480.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col:nth-child(2), .container .cols-3-480.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col:nth-child(3), .container .cols-3-480.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w20-480 {
+    width: 17.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w25-480 {
+    width: 22.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w30-480 {
+    width: 27.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w33-480 {
+    width: 30.55222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w40-480 {
+    width: 37.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w50-480 {
+    width: 47.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w60-480 {
+    width: 57.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w66-480 {
+    width: 63.88222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w70-480 {
+    width: 67.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w75-480 {
+    width: 72.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w80-480 {
+    width: 77.22222%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col.w100-480 {
+    width: 97.22222%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-3-480.cols-m > .col:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col,
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(4),
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(4) ~ .col {
+    width: 21.875%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col:nth-child(1), .container .cols-4-480.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col:nth-child(2), .container .cols-4-480.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col:nth-child(3), .container .cols-4-480.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col:nth-child(4), .container .cols-4-480.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w20-480 {
+    width: 16.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w25-480 {
+    width: 21.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w30-480 {
+    width: 26.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w33-480 {
+    width: 30.205%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w40-480 {
+    width: 36.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w50-480 {
+    width: 46.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w60-480 {
+    width: 56.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w66-480 {
+    width: 63.535%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w70-480 {
+    width: 66.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w75-480 {
+    width: 71.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w80-480 {
+    width: 76.875%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col.w100-480 {
+    width: 96.875%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-4-480.cols-m > .col:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col,
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(5),
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(5) ~ .col {
+    width: 16.66667%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col:nth-child(1), .container .cols-5-480.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col:nth-child(2), .container .cols-5-480.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col:nth-child(3), .container .cols-5-480.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col:nth-child(4), .container .cols-5-480.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col:nth-child(5), .container .cols-5-480.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w20-480 {
+    width: 16.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w25-480 {
+    width: 21.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w30-480 {
+    width: 26.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w33-480 {
+    width: 29.99667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w40-480 {
+    width: 36.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w50-480 {
+    width: 46.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w60-480 {
+    width: 56.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w66-480 {
+    width: 63.32667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w70-480 {
+    width: 66.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w75-480 {
+    width: 71.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w80-480 {
+    width: 76.66667%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col.w100-480 {
+    width: 96.66667%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-5-480.cols-m > .col:nth-child(5n+1) {
+    margin-left: 0;
+  }
+  /* line 141, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col,
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(6),
+  .cols-d-480.cols-m > .col:first-child:nth-last-child(6) ~ .col {
+    width: 13.19444%;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(1), .container .cols-6-480.cols-m > .col:nth-child(1) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(2), .container .cols-6-480.cols-m > .col:nth-child(2) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(3), .container .cols-6-480.cols-m > .col:nth-child(3) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(4), .container .cols-6-480.cols-m > .col:nth-child(4) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(5), .container .cols-6-480.cols-m > .col:nth-child(5) {
+    margin-top: 0;
+  }
+  /* line 149, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(6), .container .cols-6-480.cols-m > .col:nth-child(6) {
+    margin-top: 0;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w20-480 {
+    width: 16.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w25-480 {
+    width: 21.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w30-480 {
+    width: 26.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w33-480 {
+    width: 29.85778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w40-480 {
+    width: 36.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w50-480 {
+    width: 46.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w60-480 {
+    width: 56.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w66-480 {
+    width: 63.18778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w70-480 {
+    width: 66.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w75-480 {
+    width: 71.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w80-480 {
+    width: 76.52778%;
+  }
+  /* line 158, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col.w100-480 {
+    width: 96.52778%;
+  }
+  /* line 163, exemples/assets/scss/_partials/cols.scss */
+  .cols-6-480.cols-m > .col:nth-child(6n+1) {
+    margin-left: 0;
+  }
+}
+
+/* line 1, exemples/assets/scss/_partials/base.scss */
+body {
+  font-family: 'Raleway';
+  padding: 20px;
+}
+
+/* line 5, exemples/assets/scss/_partials/base.scss */
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* line 9, exemples/assets/scss/_partials/base.scss */
+.col {
+  min-height: 300px;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(1) {
+  background-color: #5b4886;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(2) {
+  background-color: #56447f;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(3) {
+  background-color: #524178;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(4) {
+  background-color: #4d3d71;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(5) {
+  background-color: #48396a;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(6) {
+  background-color: #433563;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(7) {
+  background-color: #3e315c;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(8) {
+  background-color: #3a2e55;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(9) {
+  background-color: #352a4e;
+}
+
+/* line 21, exemples/assets/scss/_partials/base.scss */
+.col:nth-child(10) {
+  background-color: #302647;
+}

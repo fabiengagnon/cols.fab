@@ -1,0 +1,25 @@
+body {
+	font-family: 'Raleway';
+	padding: 20px;
+}
+.container {
+	max-width: 1280px;
+	margin: auto;
+}
+.col {
+	min-height: 300px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
+
+$alpha_primary: #604c8d;
+
+@for $i from 1 through 10 {
+  .col:nth-child(#{$i}) {
+    $value: $i*5;
+    background-color: mix(black, $alpha_primary, $value);
+  }
+}

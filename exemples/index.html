@@ -2,20 +2,28 @@
 <html lang="en-CA">
 <head>
 	<meta charset="UTF-8">
-	<title>cols.fab</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+	<title>cols.fab 0.8.7</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/dist/main.css" type="text/css" media="all" />
 
 </head>
 <body>
 	
-	<h1>cols.fab</h1>
+	<h1>cols.fab 0.8.7</h1>
 	
-	<h2>4 columns w/o marge</h2>
+	<h2>Breakpoints par défaut:</h2>
 	
-	<p>(cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480)</p>
+	<p>full, 1280px (container), 1024px, 800px, 480px</p>
+	
+	<h2>Exemples</h2>
+	
+	<h3>4 columns w/o margin</h3>
+	
+	<p>(cols-4-full cols-4-1280 cols-2-1024 cols-2-800 cols-1-480)</p>
 	
 	<div>
-		<div class="cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m">
+		<div class="cols-4-full cols-2-1024 cols-2-800 cols-1-480">
 			<div class="col">1</div>
 			<div class="col">2</div>
 			<div class="col">3</div>
@@ -27,12 +35,29 @@
 		</div>
 	</div>
 	
-	<h2>4 columns w/ marge</h2>
+	<h3>4 columns w/ margin</h3>
 	
-	<p>(cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m) dans un .container</p>
+	<p>(cols-4-full cols-4-1280 cols-2-1024 cols-2-800 cols-1-480 cols-m) sans .container</p>
+	
+	<div>
+		<div class="cols-4-full cols-2-1024 cols-2-800 cols-1-480 cols-m">
+			<div class="col">1</div>
+			<div class="col">2</div>
+			<div class="col">3</div>
+			<div class="col">4</div>
+			<div class="col">1</div>
+			<div class="col">2</div>
+			<div class="col">3</div>
+			<div class="col">4</div>
+		</div>
+	</div>
+	
+	<h3>4 columns w/ margin dans un container</h3>
+	
+	<p>(cols-4-full cols-4-1280 cols-2-1024 cols-2-800 cols-1-480 cols-m) dans un .container</p>
 	
 	<div class="container">
-		<div class="cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m">
+		<div class="cols-4-full cols-2-1024 cols-2-800 cols-1-480 cols-m">
 			<div class="col">1</div>
 			<div class="col">2</div>
 			<div class="col">3</div>
@@ -44,22 +69,71 @@
 		</div>
 	</div>
 	
-	<h2>4 columns w/ marge</h2>
+	<h3>Columns avec des width différentes</h3>
 	
-	<p>(cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m) sans .container</p>
-	
-	<div>
-		<div class="cols-4-full cols-4-1280 cols-2-1024 cols-2-768 cols-1-480 cols-m">
-			<div class="col">1</div>
-			<div class="col">2</div>
-			<div class="col">3</div>
-			<div class="col">4</div>
-			<div class="col">1</div>
-			<div class="col">2</div>
-			<div class="col">3</div>
-			<div class="col">4</div>
+	<div class="container">
+		<div class="cols-2-full cols-2-1024 cols-1-800 cols-1-480 cols-m">
+			<div class="col w33-full w33-1280 w50-1024 w100-800 w100-480">1/3</div>
+			<div class="col w66-full w66-1280 w50-1024 w100-800 w100-480">2/3</div>
 		</div>
 	</div>
+	
+	<h3>Columns dynamique</h3>
+	
+	<p>Brisé @TODO</p>
+	
+	<h2>Docs</h2>
+	
+	<h3>Les variables</h3>
+	
+	<strong>$colnb</strong><br>
+	<pre>default: 6;</pre>
+	
+	<p>Le nombre maximal de col (sur une row) qu'un site peut avoir.</p>
+	
+	<strong>$mw</strong><br>
+	<pre>default: 1280;</pre>
+	
+	<p>La largeur maximal du container du site.</p>
+	
+	<strong>$container</strong><br>
+	<pre>default: container;</pre>
+	
+	<p>La class du container du site.</p>
+	
+	<strong>$m</strong><br>
+	<pre>default: 30;</pre>
+	
+	<p>La largeur en pixel des margin entre les col.</p>
+	
+	<strong>$widths</strong><br>
+<pre>default: 
+w20 20%, 
+w25 25%, 
+w30 30%, 
+w33 33.33%, 
+w40 40%, 
+w50 50%, 
+w60 60%, 
+w66 66.66%, 
+w70 70%, 
+w75 75%, 
+w80 80%, 
+w100 100%
+;</pre>
+		
+	<p>Array des différentes widths qu'une col peut avoir (Columns avec des widths différentes)<br> array(class, width)</p>
+	
+	<strong>$breakpoints</strong><br>
+<pre>default:  
+full $mw+1 $m $widths, 
+$mw $mw $m $widths,
+1024 1024 20 $widths, 
+800 800 20 $widths, 
+480 480 20 $widths
+;</pre>
+		
+	<p>Les différents breakpoints que le site utilise<br> array(class, width, margin, widths)</p>
 	
 </body>
 </html>
